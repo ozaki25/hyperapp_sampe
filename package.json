@@ -4,5 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {},
-  "author": ""
+  "author": "",
+  "dependencies": {
+    "hyperapp": "^1.0.2"
+  }
 }
