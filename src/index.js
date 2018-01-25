@@ -17,4 +17,4 @@ const view = (state, actions) => (
   </main>
 );
 
-const main = app(state, actions, view, document.body);
+const main = app(state, actions, view, document.getElementById('root'));

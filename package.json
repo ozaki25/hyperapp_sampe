@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "webpack",
+    "build-prod": "webpack -p"
+  },
   "author": "",
   "dependencies": {
     "hyperapp": "^1.0.2"
