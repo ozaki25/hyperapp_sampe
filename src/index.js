@@ -1,4 +1,5 @@
 import { h, app } from 'hyperapp';
+// import './main.css';
 
 const state = {
   count: 0,
@@ -17,4 +18,4 @@ const view = (state, actions) => (
   </main>
 );
 
-const main = app(state, actions, view, document.getElementById('root'));
+const main = app(state, actions, view, document.body);
