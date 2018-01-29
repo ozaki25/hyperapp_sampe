@@ -1,7 +1,7 @@
 import { h, app } from 'hyperapp';
-import appActions from '../src/actions';
-import appState from '../src/state';
-import Counter from '../src/components/Counter';
+import appActions from '../../src/actions';
+import appState from '../../src/state';
+import Counter from '../../src/components/Counter';
 
 beforeEach(() => {
   document.body.innerHTML = '';
