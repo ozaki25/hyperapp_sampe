@@ -7,20 +7,13 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, './public/js'),
+    path: path.resolve(__dirname, './public'),
   },
   devServer: {
     contentBase: './public',
     hot: true,
   },
   module: {
-    // loaders: [
-    //   {
-    //     test: /\.js$/,
-    //     exclude: /node_modules/,
-    //     loader: 'babel-loader',
-    //   },
-    // ],
     rules: [
       {
         test: /\.js$/,
@@ -28,7 +21,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env'],
+            presets: ['babel-preset-env'],
           },
         },
       },
